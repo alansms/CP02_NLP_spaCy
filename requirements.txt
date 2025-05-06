@@ -3,4 +3,4 @@ streamlit==1.33.0
 pandas==2.1.0
 numpy==1.23.5
 thinc==8.1.7
-spacy[pt]
+https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.5.0/pt_core_news_sm-3.5.0-py3-none-any.whl
