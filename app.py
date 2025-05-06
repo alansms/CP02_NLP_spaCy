@@ -1,11 +1,11 @@
+st.set_page_config(page_title="Analisador de Sentimentos", layout="centered")
 import spacy
 from spacy.cli import download
 import streamlit as st
 # Projeto CP02 - NLP com spaCy
 # Autor: Alan de Souza Maximiano da Silva | RM: 557088
 # App Online: https://cp02-nlp-spacy.streamlit.app/
-# Configuração da página – deve ser o primeiro comando Streamlit
-st.set_page_config(page_title="Analisador de Sentimentos", layout="centered")
+# Configuração da página já realizada no início
 from spacy.matcher import PhraseMatcher
 from spacy.tokens import Doc
 
@@ -56,10 +56,8 @@ if st.sidebar.button("Atualizar Dicionário"):
 
 # Criar matcher dinâmico
 matcher = PhraseMatcher(nlp.vocab)
-m_patterns_p = [nlp(w) for w in st.session_state.positivos]
-m_patterns_n = [nlp(w) for w in st.session_state.negativos]
-matcher.add("POSITIVO", None, *m_patterns_p)
-matcher.add("NEGATIVO", None, *m_patterns_n)
+matcher.add("POSITIVO", [nlp.make_doc(w) for w in st.session_state.positivos])
+matcher.add("NEGATIVO", [nlp.make_doc(w) for w in st.session_state.negativos])
 
 # Atualizar extensão Doc
 Doc.set_extension("sentimento", getter=lambda doc: classify(doc, matcher)[0], force=True)
