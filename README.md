@@ -1,5 +1,8 @@
 # Analisador de Sentimentos com spaCy e Streamlit
 
+## Objetivo
+O objetivo do projeto é criar um analisador de sentimentos em português usando spaCy e Streamlit, permitindo a identificação e classificação de emoções em frases por meio de regras personalizadas e uma interface web interativa.
+
 ## Descrição
 Este projeto utiliza a biblioteca **spaCy** para classificar sentimentos em frases em português com regras personalizadas e extensões do objeto `Doc`. A interface web é construída com **Streamlit** e inclui diversas funcionalidades para melhorar a experiência do usuário:
 
@@ -43,6 +46,9 @@ python -m streamlit run app.py
 - Na coluna direita, visualize o gráfico de distribuição e o histórico.
 - Exporte o histórico em CSV via botão.
 
+### Link do Aplicativo
+Acesse a versão web do app em: https://cp02-nlp-spacy.streamlit.app/
+
 ## Estrutura de Arquivos
 
 ```
@@ -53,5 +59,7 @@ python -m streamlit run app.py
 └── .venv/
 ```
 
-## Integrantes
-- Alan de Souza Maximiano da Silva — RM: 557088
+## 👥 Equipe
+A equipe é composta por um integrante:
+
+- Alan de Souza Maximiano da Silva | 📧 rm557088@fiap.com.br
