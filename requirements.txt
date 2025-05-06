@@ -1,1 +1,5 @@
 python-3.11.12
+spacy==3.5.0
+pt_core_news_sm==3.5.0
+streamlit==1.33.0
+pandas==2.1.0
