@@ -1,9 +1,1 @@
-spacy==3.5.0
-preshed==3.0.9
-catalogue==2.0.10
-murmurhash==1.0.9
-thinc==8.1.7
-wasabi==1.1.2
-srsly==2.4.8
-streamlit==1.33.0
-pt_core_news_sm==3.5.0
+python-3.11.12
