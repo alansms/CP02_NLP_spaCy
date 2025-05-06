@@ -5,8 +5,13 @@ st.set_page_config(page_title="Analisador de Sentimentos", layout="centered")
 from spacy.matcher import PhraseMatcher
 from spacy.tokens import Doc
 
-# Carrega modelo de português
-nlp = spacy.load("pt_core_news_sm")
+# Carrega modelo de português com fallback para download automático
+try:
+    nlp = spacy.load("pt_core_news_sm")
+except OSError:
+    from spacy.cli import download
+    download("pt_core_news_sm")
+    nlp = spacy.load("pt_core_news_sm")
 
 # Função de classificação genérica
 def classify(doc, matcher):
