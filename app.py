@@ -1,15 +1,18 @@
 import spacy
+from spacy.cli import download
 import streamlit as st
+# Projeto CP02 - NLP com spaCy
+# Autor: Alan de Souza Maximiano da Silva | RM: 557088
+# App Online: https://cp02-nlp-spacy.streamlit.app/
 # Configuração da página – deve ser o primeiro comando Streamlit
 st.set_page_config(page_title="Analisador de Sentimentos", layout="centered")
 from spacy.matcher import PhraseMatcher
 from spacy.tokens import Doc
 
-# Carrega modelo de português com fallback para download automático
+# Carrega modelo de português com fallback automático
 try:
     nlp = spacy.load("pt_core_news_sm")
 except OSError:
-    from spacy.cli import download
     download("pt_core_news_sm")
     nlp = spacy.load("pt_core_news_sm")
 
