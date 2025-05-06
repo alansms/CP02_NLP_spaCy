@@ -1,0 +1,9 @@
+spacy==3.7.2
+preshed==3.0.9
+catalogue==2.0.10
+murmurhash==1.0.9
+thinc==8.2.1
+wasabi==1.1.2
+srsly==2.4.8
+streamlit==1.33.0
+spacy[cuda,apple]==3.7.2
