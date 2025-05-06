@@ -1,4 +1,4 @@
-spacy==3.7.2
+spacy==3.5.0
 preshed==3.0.9
 catalogue==2.0.10
 murmurhash==1.0.9
