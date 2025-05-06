@@ -1,7 +1,7 @@
-st.set_page_config(page_title="Analisador de Sentimentos", layout="centered")
 import spacy
 from spacy.cli import download
 import streamlit as st
+st.set_page_config(page_title="Analisador de Sentimentos", layout="centered")
 # Projeto CP02 - NLP com spaCy
 # Autor: Alan de Souza Maximiano da Silva | RM: 557088
 # App Online: https://cp02-nlp-spacy.streamlit.app/
