@@ -1,9 +1,20 @@
-# Analisador de Sentimentos com spaCy e Streamlit
+**Desenvolvido por:** Alan de Souza Maximiano da Silva | 📧 rm557088@fiap.com.br  
+**Aplicativo online:** https://cp02-nlp-spacy.streamlit.app/
+
+<div align="center">
+## 🚀 Analisador de Sentimentos com spaCy & Streamlit
+</div>
+
+> Transforme texto em insights emocionais com apenas um clique!
+
 
 ## Objetivo
+
 O objetivo do projeto é criar um analisador de sentimentos em português usando spaCy e Streamlit, permitindo a identificação e classificação de emoções em frases por meio de regras personalizadas e uma interface web interativa.
 
+
 ## Descrição
+
 Este projeto utiliza a biblioteca **spaCy** para classificar sentimentos em frases em português com regras personalizadas e extensões do objeto `Doc`. A interface web é construída com **Streamlit** e inclui diversas funcionalidades para melhorar a experiência do usuário:
 
 - **Customização de Dicionário**: Adicione ou remova palavras positivas e negativas dinamicamente na sidebar.
@@ -16,6 +27,7 @@ Este projeto utiliza a biblioteca **spaCy** para classificar sentimentos em fras
   - Gráfico de barras com a distribuição de sentimentos analisados.
   - Histórico de análises com opção de exportar em CSV.
 - **Layout em Colunas**: Interface dividida em duas colunas para análise individual e visão geral.
+
 
 ## Instalação
 
@@ -35,19 +47,25 @@ Este projeto utiliza a biblioteca **spaCy** para classificar sentimentos em fras
    python -m spacy download pt_core_news_sm
    ```
 
+
 ## Uso
 
 ### Executar interface web
+
 ```bash
 python -m streamlit run app.py
 ```
+
 - A sidebar permitirá customizar o dicionário e exibirá o logo.
 - Na coluna esquerda, selecione ou digite uma frase e clique em "Analisar".
 - Na coluna direita, visualize o gráfico de distribuição e o histórico.
 - Exporte o histórico em CSV via botão.
 
+
 ### Link do Aplicativo
+
 Acesse a versão web do app em: https://cp02-nlp-spacy.streamlit.app/
+
 
 ## Estrutura de Arquivos
 
@@ -59,7 +77,9 @@ Acesse a versão web do app em: https://cp02-nlp-spacy.streamlit.app/
 └── .venv/
 ```
 
+
 ## 👥 Equipe
+
 A equipe é composta por um integrante:
 
 - Alan de Souza Maximiano da Silva | 📧 rm557088@fiap.com.br
