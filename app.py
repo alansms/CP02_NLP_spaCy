@@ -45,7 +45,7 @@ if "history" not in st.session_state:
     st.session_state.history = []
 
 # Exibe logo na sidebar
-st.sidebar.image("logo_fiap.jpg", use_container_width=True)
+st.sidebar.image("logo_fiap.jpg", use_column_width=True)
 # Sidebar: customização de dicionário
 st.sidebar.header("Dicionário de Sentimentos")
 pos_txt = st.sidebar.text_area("Positivos (vírgula)", ", ".join(st.session_state.positivos))
