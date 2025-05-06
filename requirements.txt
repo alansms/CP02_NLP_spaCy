@@ -6,3 +6,4 @@ thinc==8.2.1
 wasabi==1.1.2
 srsly==2.4.8
 streamlit==1.33.0
+pt_core_news_sm==3.5.0
